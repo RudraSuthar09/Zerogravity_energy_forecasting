@@ -1,4 +1,4 @@
-# Adani AI Energy Forecasting Dashboard (ps1_bit-rebels)
+# Adani AI Energy Forecasting Dashboard 
 
 An advanced AI-powered **Energy Consumption Forecasting and Decision-Support Dashboard** designed for operational energy planning. This system combines traditional machine learning forecasting with a cutting-edge Multi-Agent LLM pipeline to not only predict future energy demand but also intelligently explain the "why" behind the numbers.
 
