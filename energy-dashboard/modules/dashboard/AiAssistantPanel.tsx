@@ -129,7 +129,7 @@ export default function AiAssistantPanel({
         throw new Error('Select a chart range first, then click Ask AI.');
       }
 
-      const endpoint = isRangeMode ? 'http://localhost:8000/api/range-chat' : 'http://localhost:8000/api/chat';
+      const endpoint = isRangeMode ? '/api/range-chat' : '/api/chat';
       const body = isRangeMode
         ? {
           start_time: rangeSelection?.start_time,

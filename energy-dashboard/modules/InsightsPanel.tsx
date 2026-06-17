@@ -72,7 +72,7 @@ export default function InsightsPanel() {
       if (selectedEndDate) params.append('end', selectedEndDate);
       params.append('resolution', selectedAggregation || 'hourly');
 
-      const res = await fetch(`http://localhost:8000/api/operational_insights?${params.toString()}`);
+      const res = await fetch(`/api/operational_insights?${params.toString()}`);
       if (!res.ok) throw new Error(`Server error ${res.status}`);
       const json = await res.json();
       if (json.error) throw new Error(json.error);
