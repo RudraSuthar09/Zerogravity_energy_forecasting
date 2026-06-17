@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 const BACKEND_BASE_URL = process.env.FORECAST_API_BASE_URL ?? 'http://127.0.0.1:8000';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 
 export async function POST(request: Request) {
   const body = await request.json();

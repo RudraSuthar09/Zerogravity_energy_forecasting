@@ -149,7 +149,7 @@ export default function AiAssistantPanel({
       });
       if (!response.ok) {
         const data = await response.json().catch(() => ({}));
-        throw new Error(data.detail || 'AI backend request failed.');
+        throw new Error(data.detail || data.error || 'AI backend request failed.');
       }
 
       const data = await response.json();
